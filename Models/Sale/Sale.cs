@@ -10,5 +10,6 @@ namespace ConsoleStorage.Models.Sale
         public int SaleID { get; set; }
         public DateTime Date { get; set; }
         public Decimal Total { get; set; }
+        public virtual List<SaleItems> Items { get; set; }
     }
 }

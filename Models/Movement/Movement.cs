@@ -3,15 +3,17 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 
-namespace ConsoleStorage.Models.Sale
+namespace ConsoleStorage.Models.Movement
 {
-    public class Devolution
+    public class Movement
     {
-        public int DevolutionID { get; set; }
+        public int MovementID { get; set; }
         public DateTime Date { get; set; }
         public int Quantity { get; set; }
         public string Note { get; set; }
+        public MovementType MovementType { get; set; }
         public Product.Product Product { get; set; }
-        public Sale Sale { get; set; }
+        public Store.Store Origin { get; set; }
+        public Store.Store Destiny { get; set; }
     }
 }

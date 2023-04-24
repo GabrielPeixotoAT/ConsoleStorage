@@ -10,7 +10,7 @@ namespace ConsoleStorage.Models.Sale
         public int SaleItemsID { get; set; }
         public int Quantity { get; set; }
         public Decimal UnitPrice { get; set; }
-        public virtual Sale Sale { get; set; }
-        public virtual Product.Product Product { get; set; }
+        public Sale Sale { get; set; }
+        public Product.Product Product { get; set; }
     }
 }
