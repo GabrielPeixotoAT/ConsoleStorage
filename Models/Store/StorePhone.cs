@@ -9,6 +9,6 @@ namespace ConsoleStorage.Models.Store
     {
         public int StorePhoneID { get; set; }
         public string Number { get; set; }
-        public virtual Store Store { get; set; }
+        public Store Store { get; set; }
     }
 }

@@ -14,6 +14,6 @@ namespace ConsoleStorage.Models.Store
         public string Street { get; set; }
         public string Number { get; set; }
         public string Complement { get; set; }
-        public virtual Store Store { get; set; }
+        public Store Store { get; set; }
     }
 }

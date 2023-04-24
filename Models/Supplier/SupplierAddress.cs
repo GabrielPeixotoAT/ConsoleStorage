@@ -14,6 +14,6 @@ namespace ConsoleStorage.Models.Supplier
         public string Street { get; set; }
         public string Number { get; set; }
         public string Complement { get; set; }
-        public virtual Supplier Supplier { get; set; }
+        public Supplier Supplier { get; set; }
     }
 }

@@ -10,7 +10,7 @@ namespace ConsoleStorage.Models.Purchase
         public int PurchaseItemID { get; set; }
         public int Quantity { get; set; }
         public Decimal UnitPrice { get; set; }
-        public virtual Product.Product Product { get; set; }
-        public virtual Purchase Purchase { get; set; }
+        public Product.Product Product { get; set; }
+        public Purchase Purchase { get; set; }
     }
 }

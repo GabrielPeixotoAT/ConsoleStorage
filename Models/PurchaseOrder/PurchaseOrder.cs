@@ -10,7 +10,8 @@ namespace ConsoleStorage.Models.PurchaseOrder
         public int PurchaseOrderID { get; set; }
         public DateTime Date { get; set; }
         public string Note { get; set; }
-        public virtual Supplier.Supplier Supplier { get; set; }
-        public virtual PurchaseOrderStatus Status { get; set; }
+        public Supplier.Supplier Supplier { get; set; }
+        public PurchaseOrderStatus Status { get; set; }
+        public virtual List<PurchaseOrderItem> Items { get; set; }
     }
 }

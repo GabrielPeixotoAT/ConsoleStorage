@@ -10,7 +10,7 @@ namespace ConsoleStorage.Models.PurchaseOrder
         public int PurchaseOrderItemID { get; set; }
         public int Quantity { get; set; }
         public Decimal UnitPrice { get; set; }
-        public virtual PurchaseOrder PurchaseOrder { get; set; }
-        public virtual Product.Product Product { get; set; }
+        public PurchaseOrder PurchaseOrder { get; set; }
+        public Product.Product Product { get; set; }
     }
 }

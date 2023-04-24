@@ -15,6 +15,6 @@ namespace ConsoleStorage.Models.Product
         public int Quantity { get; set; }
         public int MinimalQuantity { get; set; }
         public DateTime ExpiringDate { get; set; }
-        public virtual Store.Store Store { get; set; }
+        public Store.Store Store { get; set; }
     }
 }

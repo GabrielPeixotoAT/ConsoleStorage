@@ -9,6 +9,7 @@ namespace ConsoleStorage.Models.Purchase
     {
         public int PurchaseID { get; set; }
         public DateTime Date { get; set; }
-        public virtual Supplier.Supplier Supplier { get; set; }
+        public Supplier.Supplier Supplier { get; set; }
+        public virtual List<PurchaseItem> Items { get; set; }
     }
 }
