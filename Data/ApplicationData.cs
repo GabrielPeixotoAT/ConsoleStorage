@@ -53,7 +53,7 @@ namespace ConsoleStorage.Data
         {
             string jsonText = JsonConvert.SerializeObject(this);
 
-            using (StreamWriter sw = File.CreateText("data.json"))
+            using (StreamWriter sw = File.CreateText("Data/.data/data.json"))
             {
                 sw.WriteLine(jsonText);
             }
