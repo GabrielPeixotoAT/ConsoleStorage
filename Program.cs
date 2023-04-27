@@ -1,31 +1,45 @@
 ﻿using ConsoleStorage.Data;
+using ConsoleStorage.Menus;
+using ConsoleStorage.Menus.ConcreteMenus;
 using ConsoleStorage.Models.Product;
 
-ApplicationData context = new ApplicationData();
-
-context.Products = new List<Product>() {
-    new Product {
-        ProductID = 1,
-        Name = "Teste",
-        Description = "Teste teste",
-        Code = "code",
-        Price = 14.99m,
-        Quantity = 2,
-        MinimalQuantity = 1,
-        ExpiringDate = DateTime.Now
-    },
-    new Product {
-        ProductID = 2,
-        Name = "Teste2",
-        Description = "Teste2 teste2",
-        Code = "code2",
-        Price = 9.99m,
-        Quantity = 5,
-        MinimalQuantity = 3,
-        ExpiringDate = DateTime.Now
-    }
+List<string> options = new List<string>
+{
+    "Produtos",
+    "Fornecedores",
+    "Lojas",
+    "Clientes"
 };
 
-context.SaveChanges();
+IGUI gui = new Main(options, 15);
+
+int index = 0;
+
+do
+{
+    index = gui.Render();
+    switch (index)
+    {
+        case 0:
+            Console.Clear();
+            Console.WriteLine("Produtos");
+            break;
+        case 1:
+            Console.Clear();
+            Console.WriteLine("Fornecedores");
+            break;
+        case 2:
+            Console.Clear();
+            Console.WriteLine("Lojas");
+            break;
+        case 3:
+            Console.Clear();
+            Console.WriteLine("Produto");
+            break;
+    }
+} while (index != 4);
+
+Console.BackgroundColor = ConsoleColor.Black;
+Console.ForegroundColor = ConsoleColor.Green;
 
 Console.WriteLine("Done");
