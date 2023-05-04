@@ -21,20 +21,16 @@ do
     switch (index)
     {
         case 0:
-            Console.Clear();
-            Console.WriteLine("Produtos");
+            SelectOption("Produtos");
             break;
         case 1:
-            Console.Clear();
-            Console.WriteLine("Fornecedores");
+            SelectOption("Fornecedores");
             break;
         case 2:
-            Console.Clear();
-            Console.WriteLine("Lojas");
+            SelectOption("Lojas");
             break;
         case 3:
-            Console.Clear();
-            Console.WriteLine("Produto");
+            SelectOption("Clientes");
             break;
     }
 } while (index != 4);
@@ -43,3 +39,11 @@ Console.BackgroundColor = ConsoleColor.Black;
 Console.ForegroundColor = ConsoleColor.Green;
 
 Console.WriteLine("Done");
+
+
+void SelectOption(string title)
+{
+    Console.Clear();
+    Console.WriteLine(title);
+    Console.ReadKey();
+}

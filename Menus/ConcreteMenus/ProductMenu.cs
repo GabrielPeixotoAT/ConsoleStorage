@@ -1,17 +1,16 @@
-﻿using System;
+using System;
 using System.Collections.Generic;
 using System.Linq;
-using System.Text;
 using System.Threading.Tasks;
 
 namespace ConsoleStorage.Menus.ConcreteMenus
 {
-    public class Main : AbstractMenu
+    public class ProductMenu : AbstractMenu
     {
-        public Main(List<string> options, int optionsLength)
+        public ProductMenu(List<string> options, int optionsLength)
          : base (options, optionsLength)
         {
-            Options.Add("Exit");
+            Options.Add("Back");
         }
     }
 }
